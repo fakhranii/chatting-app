@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "build": "tsc",
-    "dev": "ts-node-dev --respawn server/index.ts",
-    "test": "mocha -r ts-node/register server/**/*.test.ts",
-    "test:watch": "nodemon --watch 'server/**/*.test.ts' --exec \"mocha -r ts-node/register server/**/*.test.ts --watch\""
+    "start": "node server/server.js",
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
   },
   "keywords": [],
   "author": "",
